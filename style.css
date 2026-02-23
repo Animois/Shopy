@@ -66,3 +66,54 @@ body {
     padding: 20px 80px;
     background: #e3e3F3;
 }
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+ #navbar li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+ }
+ #navbar li a:hover {
+    color: #ff523b;
+ }
+  #navbar li a:hover,
+   #navbar li a.active {
+    color: #ff523b;
+   }
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background: #ff523b;
+    bottom: -4px;
+    left: 20px;
+    position: absolute;
+}
+
+
+/* Home Page */
+
+#hero {
+    background: url(img/hero4.png) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 80px;
+}
